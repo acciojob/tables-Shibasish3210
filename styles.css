@@ -1,2 +1,16 @@
 
 /* Your CSS Code here. */
+table{
+            width: 100vw;
+        }
+        .table thead{
+            background-color: black;
+            color: white;
+        }
+
+        .table tr td{
+            border-bottom: 1px solid black;
+        }
+        #total td{
+            padding-left: 56vw;
+        }
