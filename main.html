@@ -9,36 +9,38 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	 <div>List of all transactions</div>
-    <table class="table font-monospace text-end fw-bold" >
-        <thead class="table-head bg-dark text-light">
-            <th>#</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Amount($)</th>
+	 <caption class="table-caption">List of all transactions</caption>
+    <table class="table table-hover table-responsive table-striped font-monospace text-end fw-bold" >
+        <thead class="table-head table-dark">
+            <th scope="col">#</th>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
+            <th scope="col">Amount($)</th>
         </thead>
         <tbody class="table-body">
-            <tr>
-                <td>1</td>
+            <tr scope="row">
+                <th scope="row">1</th>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>1000</td>
             </tr>
-            <tr>
-                <td>2</td>
+            <tr scope="row">
+                <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>1500</td>
             </tr>
-            <tr>
-                <td>3</td>
+            <tr scope="row">
+                <th scope="row">3</th>
                 <td>Jack</td>
                 <td>John</td>
                 <td>2000</td>
             </tr>
-            <tr class="table-footer bg-light" id="total">
-                <td colspan="4">Total = 4000;</td>
-            </tr>
+            <tfoot>
+                <tr class="table-footer bg-light" id="total">
+					<td colspan="3"> Total = 4000;</td>
+				</tr>
+			</tfoot>
 
         </tbody>
     </table>
